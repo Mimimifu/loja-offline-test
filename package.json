@@ -1,0 +1,25 @@
+{
+  "name": "my-spa-v5",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Digital Store Pro v5 — SPA vanilla TypeScript, offline-first, build single-file",
+  "type": "commonjs",
+  "main": "src/ts/main.ts",
+  "scripts": {
+    "build": "node builder/compiler.js",
+    "serve": "node builder/serve.js",
+    "test": "npm run build && node builder/check-dist.js",
+    "test:e2e": "python3 -m pytest py-tests -q"
+  },
+  "keywords": [
+    "typescript",
+    "spa",
+    "vanilla",
+    "offline-first",
+    "no-framework"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
